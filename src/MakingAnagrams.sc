@@ -17,3 +17,8 @@ def sumAbsolute(aggr: List[(Char, Int)] ,count: Int):Int ={
 
 anagramDeletion("awqeqweqw","aeqwqew")
 
+
+("1234567890001").toList.groupBy(a => a).mapValues(_.size)
+
+Map('a' -> 1, 'b' -> 10).mapValues(a => 5 * a)
+

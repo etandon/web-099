@@ -21,3 +21,6 @@ object Solution {
 
 Solution.rotation(5,2,Array(1,2,3,4,5))
 
+
+List("q","w","e","r","t","y").splitAt(2)
+
