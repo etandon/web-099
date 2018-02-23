@@ -46,6 +46,7 @@ def inOrder(t: Tree): Unit = {
 }
 
 inOrder(t7)
+inOrder(t9)
 
 
 
