@@ -39,5 +39,15 @@ def postOrder(t: Tree, l: List[Int]): Unit = {
 
 postOrder(t7,Nil)
 
+def inOrder(t: Tree): Unit = {
+  if(t.left != None) inOrder(t.left.get)
+  println(t.value)
+  if(t.right != None) inOrder(t.right.get)
+}
+
+inOrder(t7)
+
+
+
 
 
