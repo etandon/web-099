@@ -28,5 +28,16 @@ val t7 = new Tree(7,Some(t3),Some(t15))
 
 preOrder(t7)
 
+def postOrder(t: Tree, l: List[Int]): Unit = {
+  if(t.left == None && t.right == None) {
+    print(s"${t.value} ")
+    print(l.mkString(" "))
+  }
+  if(t.left != None) postOrder(t.left.get, if(t.right !=None) Nil else List(t.value) ::: l)
+  if(t.right != None) postOrder(t.right.get,List(t.value) ::: l)
+}
+
+postOrder(t7,Nil)
+
 
 
