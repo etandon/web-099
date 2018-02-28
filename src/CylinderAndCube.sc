@@ -27,8 +27,14 @@ val K = List[Double](1,2,10,3)
 val R = List(1,2,9,4)
 val C = List(1,2,3,4).map(_*1.43)
 
+
 val packageMap =(K zip S).toMap
 val cylinderMap = (C.map(_*1.43) zip R).toMap
 val sortedpackageMap =ListMap(packageMap.toSeq.sortWith(_._1 > _._1):_*)
 val sortedCylinderMap = ListMap(cylinderMap.toSeq.sortWith(_._1 > _._1):_*)
+
+val l1 = List(1,2,3,4,5,110,2)
+val l2 = List('a','b','v','f','g','j','i')
+(l1 zip l2).toMap.toSeq.sortWith(_._1>_._1)
+
 
