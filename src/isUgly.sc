@@ -8,3 +8,17 @@ def isUgly(num: Int): Boolean = {
   else false
  }
 }
+
+def nthUglyNumber(n: Int): Int = {
+ var curr = 1
+ var i = 1
+ do {
+   println(s"i: $i")
+   println(s"curr: $curr:${isUgly(i)}")
+   if(isUgly(i)) curr +=1
+   i +=1
+ } while(curr <= n)
+ i-1
+}
+
+nthUglyNumber(7)
